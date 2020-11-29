@@ -1,3 +1,18 @@
+# Laravel8
+
+## Installation
+
+-   git clone https://github.com/bm-member/laravel8.git
+-   cd laravel8
+-   composer install
+-   cp .env.example .env
+-   setup database
+-   php artisan migrate
+-   php artisan key:generate
+-   php artisan serve
+-   run on localhost:8000
+-   done
+
 Migration
 
 -   php artisan migrate (create table from migration file)
