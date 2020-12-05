@@ -18,6 +18,15 @@ class PostController extends Controller
         return view('posts.create');
     }
 
+    public function show($id)
+    {
+        $post = Post::find($id);
+
+        // dd($post->user->name);
+
+        return view('posts.show', compact('post'));
+    }
+
     public function store(Request $request)
     {
         $post = new Post;

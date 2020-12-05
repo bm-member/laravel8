@@ -15,12 +15,16 @@
 
 Migration
 
--   php artisan migrate (create table from migration file)
--   php artisan migrate:reset (delete all table)
--   php artisan migrate:rollback (delete latest table)
--   php artisan migrate:refresh (depend migrations table)
--   php artisan migrate:fresh (drop all table)
--   php artisan tinker
+- php artisan migrate (create table from migration file)
+- php artisan migrate:reset (delete all table)
+- php artisan migrate:rollback (delete latest table)
+- php artisan migrate:refresh (depend migrations table)
+- php artisan migrate:fresh (drop all table)
+- php artisan tinker
+- php artisan migrate:fresh --seed
+- php artisan migrate:fresh
+- php artisan db:seed
+
 
 MVC
 
