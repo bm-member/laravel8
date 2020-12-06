@@ -14,6 +14,7 @@
                         <th>ID</th>
                         <th>Title</th>
                         <th>Body</th>
+                        {{-- <th>Author</th> --}}
                         <th>Actions</th>
                     </tr>
                 </thead>
@@ -23,6 +24,7 @@
                         <td>{{ $post->id }}</td>
                         <td>{{ $post->title }}</td>
                         <td>{{ $post->body }}</td>
+                        {{-- <td>{{ $post->author->name ?? '' }}</td> --}}
                         <td>
                             <a href="/posts/{{ $post->id }}/edit" class="btn btn-success">Edit</a>
                             <a href="/posts/{{ $post->id }}/delete" class="btn btn-danger">Delete</a>

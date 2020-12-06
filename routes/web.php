@@ -1,10 +1,27 @@
 <?php
 
+use App\Models\User;
+
 use App\Http\Controllers\PostController;
+use App\Models\Post;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return 'Home Page.';
+
+    $faker = Faker\Factory::create();
+
+    $user = User::create([
+        'name' => $faker->name,
+        'email' => $faker->email,
+        'password' => bcrypt($faker->text(10)),
+    ]);
+
+    $user->posts()->create([
+        'title' => $faker->text(10),
+        'body' => $faker->text(200),
+    ]);
+
+
 });
 
 Route::get('/posts', [PostController::class, 'index']);

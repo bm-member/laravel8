@@ -50,3 +50,42 @@ mysql -> 3306
 
 CRUD -> Create, Read, Update, Delete
 Post Model
+
+# HW
+
+blog
+
+one to many
+many to many
+
+user to post - one to many 
+post to user - one to one
+post to category - one to many (many to many)
+category to post - one to many (many to many)
+post to comment - one to many 
+comment to post - one to one
+
+users
+    - id
+    - name
+    - email
+    - password
+    - date
+posts
+    - id 
+    - title
+    - body
+    - user_id
+category
+    - id
+    - name
+category_post
+    - id
+    - post_id 
+    - category_id 
+    - date
+comment
+- id 
+- user_id
+- post_id
+- body
