@@ -53,6 +53,7 @@ Post Model
 
 # HW
 
+```
 blog
 
 one to many
@@ -89,3 +90,7 @@ comment
 - user_id
 - post_id
 - body
+
+```
+
+- git, git reposistory, unix command line, markdown, version
